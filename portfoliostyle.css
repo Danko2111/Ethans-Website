@@ -112,7 +112,7 @@ body {
     font-weight: 300;
     font-family: crux;
     z-index: 1;
-    color: white;
+    color: rgb(206, 63, 87);
   }
 
   .vids {
@@ -247,7 +247,7 @@ body {
     width: 100%;
     margin: 0;
     padding: 25px 0;
-    color: white;
+    color: rgb(206, 63, 87);
     background-image: url(images/rain.gif);
   }
 
@@ -292,5 +292,5 @@ body {
 
 @font-face {
   font-family: crux;
-  src: url(fonts/Crucifixion-Regular.ttf);
+  src: url(fonts/Walkway-SemiBold.ttf);
 }

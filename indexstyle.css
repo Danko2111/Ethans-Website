@@ -47,7 +47,6 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  overflow: hidden;
   z-index: -100;
   background: rgba(5, 5, 5, 0.8);
 }
@@ -71,6 +70,11 @@ body {
   margin-top: auto;
 }
 
+.logo.close {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
 span {
   flex: 0;
   font-style: italic;
@@ -78,6 +82,12 @@ span {
   font-size: 0.75em;
   margin-top: 25px;
   margin-bottom: auto;
+  font-family: crux;
+}
+
+span.close {
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .card {
@@ -89,14 +99,9 @@ span {
   background-color: rgb(22, 22, 22);
   border: 2px;
   border-radius: 15px;
+  opacity: 0.9;
 
   transform: scale(0);
-}
-
-.container.playanim {
-  opacity: 1;
-  transition: opacity 1s ease-out;
-  transition-delay: 1s;
 }
 
 .container {
@@ -107,6 +112,12 @@ span {
   align-items: center;
   justify-content: center;
   opacity: 0;
+}
+
+.container.playanim {
+  opacity: 1;
+  transition: opacity 1s ease-out;
+  transition-delay: 1s;
 }
 
 .left {
@@ -132,12 +143,16 @@ h2,
 p {
   color: white;
   flex: 0 1 auto;
+  font-family: crux;
 }
 
 h1 {
   margin-top: 15px;
   margin-bottom: 5px;
+  color: rgb(206, 63, 87);
+  font-size: 3em;
 }
+
 h2 {
   margin-top: 5px;
   font-size: 1em;
@@ -155,6 +170,8 @@ a {
   margin-bottom: auto;
   text-decoration: none;
   color: rgb(206, 63, 87);
+  font-family: crux;
+  font-size: 2em;
 }
 
 a:hover {
@@ -191,6 +208,11 @@ a:hover {
 }
 
 /*animations*/
+
+@font-face {
+  font-family: crux;
+  src: url(fonts/Walkway-SemiBold.ttf);
+}
 
 @keyframes fadein {
   from {
