@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="jquery-3.6.0.min.js"></script>
+</head>
+<body>
+   <div class="loadingPage">
+        <img src="images/loading.gif">
+    </div>
+    <div class="page_wrapper">
+        <div class="nav">
+            <img src="images/logo.png" alt="Logo" class="logo">
+            <div class="staticbg"></div>
+            <nav>
+                <ul class="nav-ul">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="nav_lines">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <script type="text/javascript" src="script.js"></script>
+        </div>
+        <div class="content">
+            <div class="title">
+                <h1>CONTACT ME</h1>
+            </div>
+            <div class="links">
+                <div class="link">
+                    <a href="https://www.youtube.com/dezisdead"  target="_blank"><img src="images/youtubelogo.png" alt="youtubelogo" class="ytlogo"></a>
+                    <a href="https://www.youtube.com/dezisdead"  target="_blank" class="logotext">youtube.com/dezisdead</a>
+                </div>
+                <div class="link">
+                    <a href="https://discord.gg/veryrare"  target="_blank"><img src="images/discordemblem.png" alt="twitter" class="discordlogo"></a>
+                    <a href="https://discord.gg/veryrare"  target="_blank" class="logotext">discord.gg/veryrare</a>
+                </div>
+                <div class="link">
+                    <a href="https://twitter.com/dezisdead"  target="_blank"><img src="images/twitterlogo.png" alt="twitterlogo" class="twitterlogo"></a>
+                    <a href="https://twitter.com/dezisdead"  target="_blank" class="logotext">twitter.com/dezisdead</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        jQuery(document).ready(function () {
+            setTimeout(function () {
+                $("document").ready($('.loadingPage').fadeOut("fast"));
+            }, 2000);
+        });
+    </script>
+</body>
+</html>

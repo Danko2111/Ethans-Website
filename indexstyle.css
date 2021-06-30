@@ -37,7 +37,7 @@ body {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
+
   z-index: 1;
 }
 
@@ -144,6 +144,8 @@ p {
   color: white;
   flex: 0 1 auto;
   font-family: crux;
+  user-select: none;
+  -moz-user-select: none;
 }
 
 h1 {
@@ -172,6 +174,7 @@ a {
   color: rgb(206, 63, 87);
   font-family: crux;
   font-size: 2em;
+  cursor: pointer;
 }
 
 a:hover {
